@@ -8,6 +8,7 @@ WORKDIR /app
 COPY target/RandomNumberGenerator-0.0.1-SNAPSHOT.jar /app
 
 
+
 # Ekspozoni portin 8080 (në rast se aplikacioni juaj dëshiron të dëgjojë në këtë port)
 EXPOSE 8080
 
