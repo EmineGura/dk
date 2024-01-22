@@ -27,4 +27,4 @@ jobs:
             context: .
             file: Dockerfile
             push: true
-            tags: eminegura/random-number-generator:latest
+            tags: eminegura/random-number-generator:dk
