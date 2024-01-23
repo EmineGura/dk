@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: random-number-generator-project
+ name: prometheus-deployment
 spec:
   replicas: 3  # Number of replicas
   selector:
     matchLabels:
-      app: random-number-generator-project
+      app: prometheus
   template:
     metadata:
       labels:
-        app: random-number-generator-project
+        app: prometheus
     spec:
       containers:
-      - name: random-number-generator-project
-        image: elli31/random-number-generator-project:random2
+      - name: prometheus
+        image: eminegura/random-number-generator:dk
         ports:
         - containerPort: 8081
         resources:
